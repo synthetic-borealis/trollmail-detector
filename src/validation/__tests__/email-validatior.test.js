@@ -1,4 +1,7 @@
-const { validate: validateEmail, EmailValidationStatus: ValidationStatus } = require('../email-validator');
+const {
+  validate: validateEmail,
+  EmailValidationStatus: ValidationStatus,
+} = require('../email-validator');
 
 const validEmail = 'albus.dumbledore@hogwarts.ac.uk';
 const invalidEmail = 'albus.dumbledore#hogwarts.ac.uk';

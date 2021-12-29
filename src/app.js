@@ -4,6 +4,8 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const rateLimit = require('express-rate-limit').default;
 
+const emailValidator = require('./routes/emailValidator');
+
 require('dotenv').config();
 
 const { PORT = 4040 } = process.env;
@@ -25,8 +27,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(helmet());
 
-app.get('/', (req, res) => {
-  res.status(404).json({ message: 'Resource not found' });
-});
+app.get('/', emailValidator);
 
 app.listen(PORT, () => {});
