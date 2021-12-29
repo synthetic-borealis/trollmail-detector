@@ -26,7 +26,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(helmet());
 
 app.get('/', (req, res) => {
-  res.send('<h1>Hello there!</h1>');
+  res.status(404).json({ message: 'Resource not found' });
 });
 
 app.listen(PORT, () => {});

@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node src/app.js",
     "dev": "nodemon src/app.js",
-    "test": "jest"
+    "test": "jest",
+    "generate-blacklist": "node scripts/generate-blacklist.mjs"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,8 @@
   },
   "devDependencies": {
     "jest": "^27.4.5",
+    "node-fetch": "^3.1.0",
+    "node-html-parser": "^5.2.0",
     "nodemon": "^2.0.15"
   }
 }
