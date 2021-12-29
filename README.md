@@ -1,1 +1,1 @@
-# trollmail-detector
+# Trollmail Detector
