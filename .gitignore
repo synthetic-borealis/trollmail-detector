@@ -1,14 +1,32 @@
 node_modules
-dist
-validation-log.json
+.idea
 *.log
-/build/**
+coverage
+coverage.lcov
+.DS_Store
+lib
+dist
+types
+*.tgz
+*.tar.gz
+*.exe
+*.c
+*.asm
+*.cpp
+*.bas
+*.pas
+*.rs
+*.pdb
+./*.py
+*.kt
+*.java
+*.jar
+*.o
+tmp/
 
-# Yarn v2+
+# yarn v2
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
 .pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
