@@ -21,14 +21,14 @@ const emailValidator = (req, res, next) => {
         break;
 
       case ValidationStatus.NotAnEmail:
-        res.json({
+        res.status(401).json({
           email,
           status: 'NotAnEmail',
         });
         break;
 
       case ValidationStatus.Blacklisted:
-        res.json({
+        res.status(401).json({
           email,
           status: 'Blacklisted',
         });
